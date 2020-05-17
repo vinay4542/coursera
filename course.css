@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 2px solid red;
+    border: none;
+
+
+}
+
+#n1 {
+    text-align: center;
+}
+
+
+.box {
+    border: 2px solid rgba(43, 38, 38, 0.733);
+    margin: 13px;
+    padding: 3px;
+    background-color: rgba(218, 211, 211, 0.815);
+}
+
+@media only screen and (min-width:992px) 
+{
+    h3{
+        border: 2px solid red;
+        background-color: yellow;
+        width: 30%;
+        text-align: center;
+        display:block;
+        float:right;
+        padding:2px;
+        margin: -7px -8px 2px 312px;
+    
+    }
+
+    #box1 {
+        padding: 7px;
+        float: left;
+        width: 30%;
+    }
+
+    #box2 {
+        padding: 7px;
+        float: left;
+        width: 30%;
+
+    }
+
+    #box3 {
+        padding: 7px;
+        float: left;
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    h3{
+        border: 2px solid red;
+        background-color: yellow;
+        width: 30%;
+        text-align: center;
+        display:block;
+        float:right;
+        padding:2px;
+        margin: -5px -5px 15px 250px;
+    
+    }
+    #box1 {
+        padding: 5px;
+        float: left;
+        margin-left: 60px;
+        width: 38%;
+    }
+
+    #box2 {
+        padding: 5px;
+        float: right;
+        margin-right:60px ;
+        width: 38%
+    }
+
+    #box3 {
+        padding: 5px;
+        clear:both;
+        margin:60px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    h3{
+        border: 2px solid red;
+        background-color: yellow;
+        width: 30%;
+        text-align: center;
+        display:block;
+        float:right;
+        padding:2px;
+        margin: -5px -5px 15px 250px;
+    
+    }
+    #box1 {
+        padding: 5px;
+        
+    }
+
+    #box2 {
+        padding: 5px;
+        
+    }
+
+    #box3 {
+        padding: 5px;
+        
+    }
+}
