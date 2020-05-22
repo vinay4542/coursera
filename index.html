@@ -1,153 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    * {
-    box-sizing: border-box;
-}
+   
 
-.container {
-    border: 2px solid red;
-    border: none;
-
-
-}
-
-#n1 {
-    text-align: center;
-}
-
-
-.box {
-    border: 2px solid rgba(43, 38, 38, 0.733);
-    margin: 13px;
-    padding: 3px;
-    background-color: rgba(218, 211, 211, 0.815);
-}
-
-@media only screen and (min-width:992px) 
-{
-    h3{
-        border: 2px solid red;
-        background-color: yellow;
-        width: 30%;
-        text-align: center;
-        display:block;
-        float:right;
-        padding:2px;
-        margin: -7px -8px 2px 312px;
-    
-    }
-
-    #box1 {
-        padding: 7px;
-        float: left;
-        width: 30%;
-    }
-
-    #box2 {
-        padding: 7px;
-        float: left;
-        width: 30%;
-
-    }
-
-    #box3 {
-        padding: 7px;
-        float: left;
-        width: 30%;
-    }
-}
-
-@media only screen and (min-width:768px) and (max-width:991px) {
-    h3{
-        border: 2px solid red;
-        background-color: yellow;
-        width: 30%;
-        text-align: center;
-        display:block;
-        float:right;
-        padding:2px;
-        margin: -5px -5px 15px 250px;
-    
-    }
-    #box1 {
-        padding: 5px;
-        float: left;
-        margin-left: 60px;
-        width: 38%;
-    }
-
-    #box2 {
-        padding: 5px;
-        float: right;
-        margin-right:60px ;
-        width: 38%
-    }
-
-    #box3 {
-        padding: 5px;
-        clear:both;
-        margin:60px;
-    }
-}
-
-@media only screen and (max-width:767px) {
-    h3{
-        border: 2px solid red;
-        background-color: yellow;
-        width: 30%;
-        text-align: center;
-        display:block;
-        float:right;
-        padding:2px;
-        margin: -5px -5px 15px 250px;
-    
-    }
-    #box1 {
-        padding: 5px;
-        
-    }
-
-    #box2 {
-        padding: 5px;
-        
-    }
-
-    #box3 {
-        padding: 5px;
-        
-    }
-}
-    </style>
-</head>
-
+    <title>Boostrap Starter Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
 <body>
-    <div class="container">
-        <h1 id="n1">Our menu</h1>
-        <div class="box" id="box1">
-            <h3>chicken</h3>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nostrum aperiam iste laborum a beatae
-                maxime. Eaque distinctio id optio, fugiat placeat eius repellat fugit corrupti a magni ipsam molestiae.
-            </p>
-        </div>
-        <div class="box" id="box2">
-            <h3>shusi</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nostrum aperiam iste laborum a beatae
-                maxime. Eaque distinctio id optio, fugiat placeat eius repellat fugit corrupti a magni ipsam molestiae.</p>
-        </div>
-        <div class="box" id="box3">
-            <h3>beaf</h3>
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic nostrum aperiam iste laborum a beatae
-                maxime. Eaque distinctio id optio, fugiat placeat eius repellat fugit corrupti a magni ipsam molestiae.
-            </p>
-        </div>
-    </div>
-</body>
 
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="index.html">Food, LLC</a>
+          </div>
+          
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+        
+      </div>
+
+      <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
+           <li>
+             <a href="#section-1">Chicken</a>
+           </li>
+           <li>
+             <a href="#section-2">Beaf</a>
+           </li>
+           <li>
+             <a href="#section-3">Sushi</a>
+           </li>
+         </ul>
+       </div>
+
+      
+    </nav>
+  </header>
+  
+  <div>
+      <h2 id="page-heading" class="text-center">Our Menu</h2>
+  </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <section id="section-1">
+              <h3 class="text-center">Chicken</h3>
+              <p>
+                  
+          
+                  Jerky pancetta frankfurter beef ribs meatloaf porchetta filet mignon t-bone. Prosciutto porchetta picanha cupim pancetta. Kevin drumstick pork loin tail jowl capicola. Filet mignon porchetta chicken, landjaeger picanha swine shoulder fatback corned beef kielbasa pancetta.
+                  
+                  Flank brisket pork loin ham hock tenderloin burgdoggen biltong jerky meatloaf sirloin porchetta short loin alcatra shank pork chop. Rump flank beef ribs, tri-tip burgdoggen salami meatball prosciutto short ribs frankfurter jowl tenderloin shoulder. Meatball frankfurter kielbasa, cow alcatra pork andouille pork chop fatback pork belly. Turkey tail burgdoggen, biltong bacon leberkas hamburger capicola landjaeger drumstick. Landjaeger tri-tip ground round porchetta, hamburger brisket alcatra ham short ribs cupim. Boudin shankle turkey pork belly hamburger biltong capicola ham pork kielbasa frankfurter porchetta cow fatback brisket.
+                  
+                  
+                  Chuck picanha pork belly ham hock swine capicola rump bacon alcatra. Boudin kielbasa andouille bacon hamburger flank shank turkey jerky ball tip picanha burgdoggen short loin. Leberkas biltong prosciutto shoulder buffalo turkey ham hock pork tongue. Salami short loin bresaola, corned beef biltong drumstick flank boudin. Drumstick short loin bacon doner beef.
+                  
+                  Chicken boudin ground round pig leberkas hamburger jerky prosciutto burgdoggen meatball sausage shank pork belly rump short ribs. Landjaeger bresaola strip steak drumstick pancetta. Boudin porchetta kevin, swine jowl strip steak leberkas. Doner pork chop sausage meatloaf ham hock. Porchetta tail sausage ham jerky, alcatra boudin cupim filet mignon pork belly. Beef leberkas short ribs ribeye cow turkey. Tail shankle hamburger sausage, tenderloin spare ribs flank ribeye kevin shoulder alcatra swine.
+                  
+               
+                  
+                  Chicken beef ribs pancetta bacon pig brisket boudin, turducken pork belly ham hock burgdoggen leberkas. Meatball cow bacon pancetta drumstick pork jowl kielbasa. Short loin alcatra salami tenderloin pork loin. Pork belly chuck biltong landjaeger flank.
+                  
+                  T
+
+                  <br>(End of Chicken section)<a href="#top"> Back To Top</a>
+                </p>
+          </section>
+            
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <section id="section-2">
+              <h3 class="text-center">Beef</h3>
+              <p>
+                   pancetta.
+                  
+                  Flank brisket pork loin ham hock tenderloin burgdoggen biltong jerky meatloaf sirloin porchetta short loin alcatra shank pork chop. Rump flank beef ribs, tri-tip burgdoggen salami meatball prosciutto short ribs frankfurter jowl tenderloin shoulder. Meatball frankfurter kielbasa, cow alcatra pork andouille pork chop fatback pork belly. Turkey tail burgdoggen, biltong bacon leberkas hamburger capicola landjaeger drumstick. Landjaeger tri-tip ground round porchetta, hamburger brisket alcatra ham short ribs cupim. Boudin shankle turkey pork belly hamburger biltong capicola ham pork kielbasa frankfurter porchetta cow fatback brisket.
+                  
+                  Kevin rump ball tip meatball flank pork chop cow bacon prosciutto turducken burgdoggen. Meatloaf salami bacon buffalo pancetta tail cow pastrami shankle tongue pork chop beef ribs leberkas. Strip steak tongue salami frankfurter, leberkas shank t-bone beef ribs pork chop ribeye tri-tip shankle. Bresaola landjaeger boudin, rump corned beef leberkas ground round alcatra sausage tail shankle spare ribs bacon. Corned beef short loin beef, sausage ham hock tail jerky meatball biltong pancetta tongue flank pastrami bresaola.
+                  
+                  enderloin spare ribs flank ribeye kevin shoulder alcatra swine.
+                  
+                  Sausage pig doner pork chop t-bone, sirloin shank bresaola prosciutto beef ribs kielbasa burgdoggen pastrami turducken spare ribs. Venison strip steak meatloaf buffalo, ham shankle beef bresaola t-bone flank beef ribs capicola. Turducken jerky jowl salami kevin picanha. Landjaeger hamburger rump kielbasa swine chuck andouille capicola short loin t-bone doner fatback. Pork loin cow filet mignon, landjaeger cupim turducken meatloaf brisket biltong pastrami kielbasa.
+                  
+                  Chicken beef ribs pancetta bacon pig brisket boudin, turducken pork belly ham hock burgdoggen leberkas. Meatball cow bacon pancetta drumstick pork jowl kielbasa. Short loin alcatra salami tenderloin pork loin. Pork belly chuck biltong landjaeger flank.
+                  
+                  
+                  <br>(End of Beef section)<a href="#top"> Back To Top</a>
+                </p>
+          </section>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4">
+          <section id="section-3">
+              <h3 class="text-center">Sushi</h3>
+              <p>
+                  
+                  Jerky pancetta frankfurter beef ribs meatloaf porchetta filet mignon t-bone. Prosciutto porchetta picanha cupim pancetta. Kevin drumstick pork loin tail jowl capicola. Filet mignon porchetta chicken, landjaeger picanha swine shoulder fatback corned beef kielbasa pancetta.
+                  
+                  Flank brisket pork loin ham hock tenderloin burgdoggen biltong jerky meatloaf sirloin porchetta short loin alcatra shank pork chop. Rump flank beef ribs, tri-tip burgdoggen salami meatball prosciutto short ribs frankfurter jowl tenderloin shoulder. Meatball frankfurter kielbasa, cow alcatra pork andouille pork chop fatback pork belly. Turkey tail burgdoggen, biltong bacon leberkas hamburger capicola landjaeger drumstick. Landjaeger tri-tip ground round porchetta, hamburger brisket alcatra ham short ribs cupim. Boudin shankle turkey pork belly hamburger biltong capicola ham pork kielbasa frankfurter porchetta cow fatback brisket.
+                  
+                 
+                  Chicken boudin ground round pig leberkas hamburger jerky prosciutto burgdoggen meatball sausage shank pork belly rump short ribs. Landjaeger bresaola strip steak drumstick pancetta. Boudin porchetta kevin, swine jowl strip steak leberkas. Doner pork chop sausage meatloaf ham hock. Porchetta tail sausage ham jerky, alcatra boudin cupim filet mignon pork belly. Beef leberkas short ribs ribeye cow turkey. Tail shankle hamburger sausage, tenderloin spare ribs flank ribeye kevin shoulder alcatra swine.
+                  
+                  Sausage pig doner pork chop t-bone, sirloin shank bresaola prosciutto beef ribs kielbasa burgdoggen pastrami turducken spare ribs. Venison strip steak meatloaf buffalo, ham shankle beef bresaola t-bone flank beef ribs capicola. Turducken jerky jowl salami kevin picanha. Landjaeger hamburger rump kielbasa swine chuck andouille capicola short loin t-bone doner fatback. Pork loin cow filet mignon, landjaeger cupim turducken meatloaf brisket biltong pastrami kielbasa.
+                  
+               
+                  <br>(End of Sushi section)<a href="#top"> Back To Top</a>
+                </p>
+          </section>
+        </div>
+
+          
+      </div>
+    </div>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
 </html>
